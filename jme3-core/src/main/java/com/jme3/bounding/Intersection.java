@@ -313,7 +313,7 @@ public final class Intersection {
 
         // test in Z-direction
         findMinMax(tmp0.z, tmp1.z, tmp2.z, minMax);
-        if (minMax.x > extent.z || minMax.y < -extent.z) {
+        if (minMax.x > extent.z || minMax.z < -extent.z) {
             vars.release();
             return false;
         }
